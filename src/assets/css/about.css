@@ -1,0 +1,36 @@
+.about {
+    width: 100%;
+    height: auto;
+}
+
+.about__wrap {
+    color: #333333;
+}
+
+.about__wrap h1 {
+    margin: 40px 0 25px;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.about__wrap img {
+    display: block;
+    float: left;
+    padding-right: 25px;
+    width: 450px;
+    height: auto;
+}
+
+.about__wrap p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #858585;
+}
+
+table {
+    margin: 10px auto 20px;
+}
+
+table tr td {
+    padding: 9px;
+}

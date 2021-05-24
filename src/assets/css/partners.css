@@ -1,0 +1,191 @@
+.partners {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.partners__list {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(60px, auto));
+    grid-auto-rows: minmax(270px, auto);
+}
+
+.partners__element--three {
+    grid-column: span 3;
+}
+
+.partners__element--four {
+    grid-column: span 4;
+}
+
+.partners__element--five {
+    grid-column: span 5;
+}
+
+.partners__element--six {
+    grid-column: span 6;
+}
+
+.partners__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ff2600;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 25px 0;
+    position: relative;
+    text-align: center;
+}
+
+
+.partners__text {
+    font-size: 14px;
+    line-height: 1.429;
+    text-align: left;
+    color: #333333;
+    margin: 20px 0;
+}
+
+.partners__element {
+    position: relative;
+}
+
+.partners__element:first-child {
+    padding: 20px;
+}
+
+
+.partners__element:first-child::before {
+    display: none;
+}
+
+.partners__element::before {
+    content: '';
+    background-color: rgba(119, 0, 255, 0.85);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.partners__element:hover::before {
+    content: '';
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.partners__element:hover .partners__info {
+    border-color: #ff2600;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.partners__element:nth-child(2) {
+    background: url(../img/Yandex.png) center no-repeat;
+    background-size: 60%;
+}
+
+.partners__element:nth-child(3) {
+    background: url(../img/KasperskyLab.png) center no-repeat;
+    background-size: 60%;
+}
+
+.partners__element:nth-child(4) {
+    background: url(../img/Wargaming.png) center no-repeat;
+    background-size: 50%;
+}
+
+.partners__element:nth-child(5) {
+    background: url(../img/Amedia.png) center no-repeat;
+    background-size: 25%;
+}
+
+.partners__element:nth-child(6) {
+    background: url(../img/Microsoft.png) center no-repeat;
+    background-size: 50%;
+}
+
+.partners__element:nth-child(7) {
+    background: url(../img/Eset.png) center no-repeat;
+    background-size: 40%;
+}
+
+.partners__element:nth-child(8) {
+    background: url(../img/Innova.png) center no-repeat;
+    background-size: 40%;
+}
+
+.partners__info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    padding: 10px 25px 80px;
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, border-color;
+}
+
+.partners__name {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.partners__description {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.667;
+    margin: 20px 0;
+}
+
+.partners__link {
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin: 0 2px;
+    appearance: none;
+    padding: 0;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+
+.partners__link img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: #ffffff;
+    width: 15px;
+    height: 15px;
+}
+
+.partners__link:hover, .partners__link:active {
+    background-color: #ff2600;
+}
+
+.partners__btns {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
