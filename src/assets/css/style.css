@@ -5,6 +5,8 @@
 @import "features.css";
 @import "partners.css";
 @import "news.css";
+@import "login.css";
+@import "register.css";
 
 /* Общие стили */
 * {
@@ -85,19 +87,24 @@ body {
 
 .menu ul {
     display: flex;
+    align-items: center;
     gap: 12px;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.menu__link{
+.menu__item {
+    height: 100%;
+}
+
+.menu__link {
     font-size: 14px;
     line-height: 1.667;
     transition-duration: 500ms;
     transition-property: color;
 }
 
-.menu__link::before{
+.menu__link::before {
     content: "";
     width: 8px;
     height: 2px;
@@ -113,10 +120,11 @@ body {
     opacity: 1;
 }
 
-.menu__link:hover::before{
+.menu__link:hover::before {
     opacity: 1;
 }
-.menu__link:hover{
+
+.menu__link:hover {
     color: #ff2600;
 }
 
@@ -137,34 +145,34 @@ body {
     background-size: 45%;
 }
 
-.banner__wrap{
+.banner__wrap {
     padding-top: 235px;
     padding-bottom: 250px;
     padding-right: 110px;
 }
 
-.banner__info{
+.banner__info {
     max-width: 580px;
     margin-left: auto;
 }
 
-.banner__title{
+.banner__title {
     font-size: 80px;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1;
 }
 
-.banner__little{
+.banner__little {
     font-size: 43px;
     display: block;
 }
 
-.banner__red{
+.banner__red {
     color: #ff2600;
 }
 
-.banner__text{
+.banner__text {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -174,7 +182,7 @@ body {
     margin: 15px 0;
 }
 
-.banner__button{
+.banner__button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -199,7 +207,7 @@ body {
     margin-bottom: 20px;
 }
 
-.banner__button--last{
+.banner__button--last {
     background-color: transparent;
     margin-right: 0;
     border-color: #323649;
@@ -276,4 +284,53 @@ body {
     font-size: 14px;
     color: #808080;
     margin-bottom: 10px;
+}
+
+/*Выпадающее меню*/
+
+
+#menu1 {
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+#menu1 ul {
+    position: relative;
+}
+
+#menu1 ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#menu1 ul li:hover > ul {
+    display: inherit;
+}
+
+.dropdown__item {
+    min-width: 170px;
+    display: block;
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    width: 30px;
+    transition: all .5s;
+}
+
+.dropdown__link {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    transition: all .5s;
+    color: #ff2600;
+}
+
+.dropdown__item:hover {
+    background-color: #ff2600;
+}
+
+.dropdown__link:hover {
+    color: #fff;
 }

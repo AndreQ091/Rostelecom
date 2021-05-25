@@ -14,7 +14,7 @@
 
 .contacts__info {
     width: 500px;
-    height: 400px;
+    height: 420px;
     border: 2px solid #ff2600;
     padding: 8px;
 }
@@ -33,8 +33,12 @@
     margin: 10px;
 }
 
-.contacts__info p:nth-child(5) {
+.contacts__info p:nth-child(6) {
     margin-top: 35px;
+}
+
+.contacts__info p a {
+    color: #9900ff;
 }
 
 .contacts__btns {

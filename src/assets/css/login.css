@@ -1,0 +1,124 @@
+.login {
+    width: 100%;
+    height: 100vh;
+}
+
+.login__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f5;
+}
+
+.login__form {
+    width: 400px;
+    height: 440px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 40px;
+    color: #101828;
+}
+
+.login__form h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.input {
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 10px;
+    background: #f4f4f5;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.form__btn {
+    background-color: #ff4f12;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: white;
+    width: 75%;
+    height: 40px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    transition: all .5s;
+
+}
+
+.form__btn:hover {
+    background-color: #9900ff;
+}
+
+.form__btn:focus {
+    background-color: #9900ff;
+}
+
+.form__checkbox {
+    font-size: 14px;
+    color: #101828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__checkbox #check {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__checkbox a {
+    transition: all .5s;
+    margin-left: 7px;
+}
+
+.form__checkbox a:hover {
+    color: #9900ff;
+    text-decoration: underline;
+}
+
+.form__checkbox #check + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form__checkbox #check + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.form__checkbox #check:checked + label::before {
+    background-color: #ff2600;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+#social__icons2 {
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#social__icons2 .social__item {
+    width: 25px;
+}
