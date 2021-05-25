@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/favicon.png">
-    <title>Авторизация</title>
+    <title>Регистрация</title>
 </head>
 <body>
 <div class="container">
@@ -22,16 +22,16 @@
             <div class="header__menu menu" id="menu1">
                 <ul>
                     <li class="menu__item"><a href="../../index.html" class="menu__link">Главная</a></li>
-                    <li class="menu__item"><a href="./about.html" class="menu__link">О компании</a></li>
-                    <li class="menu__item"><a href="./contacts.html" class="menu__link">Контакты</a></li>
-                    <li class="menu__item"><a href="./features.html" class="menu__link">Преимущества</a></li>
-                    <li class="menu__item"><a href="./partners.html" class="menu__link">Партнеры</a></li>
-                    <li class="menu__item"><a href="./news.html" class="menu__link">Новости</a></li>
-                    <li class="menu__item"><a href="./staff.html" class="menu__link">Галерея</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                    <li class="menu__item"><a href="features.html" class="menu__link">Преимущества</a></li>
+                    <li class="menu__item"><a href="partners.html" class="menu__link">Партнеры</a></li>
+                    <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+                    <li class="menu__item"><a href="staff.html" class="menu__link">Галерея</a></li>
                     <li class="menu__item active"><a href="#" class="menu__link">Войти</a>
                         <ul class="dropdown">
                             <li class="dropdown__item">
-                                <a class="dropdown__link" href="./login.html">Авторизация</a>
+                                <a class="dropdown__link" href="login.html">Авторизация</a>
                             </li>
                             <li class="dropdown__item">
                                 <a class="dropdown__link" href="./register.html">Регистрация</a>
@@ -43,17 +43,21 @@
         </div>
     </header>
     <main class="content">
-        <section class="login">
-            <div class="login__wrap wrap">
+        <section class="login register">
+            <div class="register__wrap login__wrap wrap">
                 <form action="#" class="login__form">
-                    <h1>Авторизация</h1>
+                    <h1>Регистрация</h1>
+                    <div class="form__personal_data">
+                        <input class="personal__name input" type="text" placeholder="Имя">
+                        <input type="text" placeholder="Фамилия" class="personal__surname input">
+                    </div>
                     <input class="form__login input" type="text" placeholder="Телефон или e-mail">
                     <input type="password" placeholder="Пароль" class="form__pass input">
-                    <button class="form__btn" type="submit">Войти</button>
+                    <input type="password" placeholder="Повторите пароль" class="form__pass input">
+                    <button class="form__btn" type="submit">Зарегистрироваться</button>
                     <div class="form__checkbox">
-                        <input type="checkbox" id="check" name="remember" checked>
-                        <label for="check">Запомнить меня</label>&#160;&#160;
-                        <a href="./register.html">Регистрация</a>
+                        <span>Уже есть учетная запись?</span>&#160;&#160;
+                        <a href="login.html">Вход</a>
                     </div>
                     <div id="social__icons2" class="social__icons">
                         <a class="social__link" target="_blank" href="http://vk.com/rostelecom">
@@ -75,12 +79,12 @@
             <div class="footer__menu menu">
                 <ul>
                     <li class="menu__item"><a href="../../index.html" class="menu__link">Главная</a></li>
-                    <li class="menu__item"><a href="./about.html" class="menu__link">О компании</a></li>
-                    <li class="menu__item"><a href="./contacts.html" class="menu__link">Контакты</a></li>
-                    <li class="menu__item"><a href="./features.html" class="menu__link">Преимущества</a></li>
-                    <li class="menu__item"><a href="./partners.html" class="menu__link">Партнеры</a></li>
-                    <li class="menu__item"><a href="./news.html" class="menu__link">Новости</a></li>
-                    <li class="menu__item"><a href="./staff.html" class="menu__link">Галерея</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+                    <li class="menu__item"><a href="features.html" class="menu__link">Преимущества</a></li>
+                    <li class="menu__item"><a href="partners.html" class="menu__link">Партнеры</a></li>
+                    <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+                    <li class="menu__item"><a href="staff.html" class="menu__link">Галерея</a></li>
                 </ul>
             </div>
             <div class="footer__social">
