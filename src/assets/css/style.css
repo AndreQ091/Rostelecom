@@ -7,6 +7,8 @@
 @import "news.css";
 @import "login.css";
 @import "register.css";
+@import "staff.css";
+@import "feedback.css";
 
 /* Общие стили */
 * {
@@ -237,7 +239,7 @@ body {
 .footer__menu {
     margin: 10px 0;
     height: 100%;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .footer__menu ul {
@@ -260,6 +262,7 @@ body {
 .social__text {
     font-size: 14px;
     color: #fff;
+    margin: 10px 0 5px 0;
 }
 
 .social__icons {

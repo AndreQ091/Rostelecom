@@ -1,0 +1,52 @@
+.feedback {
+    width: 100%;
+    height: auto;
+    background: #f4f4f5;
+}
+
+.feedback__wrap h1 {
+    font-size: 34px;
+    font-weight: normal;
+    margin: 40px 0;
+}
+
+.feedback__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/RGB_RT_logo-vertical_main_ru.png") 5% center no-repeat;
+    background-size: 25%;
+}
+
+.feedback__form {
+    height: auto;
+    width: 500px;
+    background-color: #fff;
+    resize: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feedback__form label {
+    font-size: 16px;
+    color: #101828;
+    margin: 3px;
+}
+
+.feedback__form input, .feedback__form textarea, .feedback__form select {
+    border: 1px solid #101828;
+    outline: none;
+    margin: 10px 0;
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    background: #f4f4f5;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.feedback__form textarea {
+    text-align: left;
+}

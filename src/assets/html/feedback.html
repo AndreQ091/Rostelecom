@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/favicon.png">
-    <title>Регистрация</title>
+    <title>Оставить заявку</title>
 </head>
 <body>
 <div class="container">
@@ -28,7 +28,7 @@
                     <li class="menu__item"><a href="./partners.html" class="menu__link">Партнеры</a></li>
                     <li class="menu__item"><a href="./news.html" class="menu__link">Новости</a></li>
                     <li class="menu__item"><a href="./staff.html" class="menu__link">Галерея</a></li>
-                    <li class="menu__item active"><a href="#" class="menu__link">Войти</a>
+                    <li class="menu__item"><a href="#" class="menu__link">Войти</a>
                         <ul class="dropdown">
                             <li class="dropdown__item">
                                 <a class="dropdown__link" href="./login.html">Авторизация</a>
@@ -43,33 +43,37 @@
         </div>
     </header>
     <main class="content">
-        <section class="login register">
-            <div class="register__wrap login__wrap wrap">
-                <form action="#" class="login__form">
-                    <h1>Регистрация</h1>
-                    <div class="form__personal_data">
-                        <input class="personal__name input" type="text" placeholder="Имя">
-                        <input type="text" placeholder="Фамилия" class="personal__surname input">
-                    </div>
-                    <input class="form__login input" type="text" placeholder="Телефон или e-mail">
-                    <input type="password" placeholder="Пароль" class="form__pass input">
-                    <input type="password" placeholder="Повторите пароль" class="form__pass input">
-                    <button class="form__btn" type="submit">Зарегистрироваться</button>
-                    <div class="form__checkbox">
-                        <span>Уже есть учетная запись?</span>&#160;&#160;
-                        <a href="./login.html">Вход</a>
-                    </div>
-                    <div id="social__icons2" class="social__icons">
-                        <a class="social__link" target="_blank" href="http://vk.com/rostelecom">
-                            <img src="../img/vk.svg" alt="Вконтакте" class="social__item">
-                        </a>
-                        <a class="social__link" target="_blank" href="https://www.instagram.com/rostelecom.official/">
-                            <img src="../img/instagram.png" alt="Instagram" class="social__item">
-                        </a>
-                        <a class="social__link" target="_blank" href="http://www.facebook.com/Rostelecom.Official">
-                            <img src="../img/facebook.svg" alt="Facebook" class="social__item">
-                        </a>
-                    </div>
+        <section class="feedback">
+            <div class="feedback__wrap wrap">
+                <h1>Оставьте заявку, и мы Вам перезвоним!</h1>
+                <form action="#" class="feedback__form">
+                    <p>
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name">
+                    </p>
+                    <p>
+                        <label for="surname">Ваша фамилия</label>
+                        <input type="text" id="surname">
+                    </p>
+                    <p>
+                        <label for="surname">Номер телефона</label>
+                        <input type="number" id="phone">
+                    </p>
+                    <p>
+                        <label for="work">Желаемая должность</label>
+                        <select id="work">
+                            <option>Менеджер по продажам</option>
+                            <option>Старший руководитель отдела</option>
+                            <option>Работник отдела кадров</option>
+                            <option>Супервайзер</option>
+                            <option>Специалист по работе с персоналом</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="about">Расскажите еще немного о себе</label>
+                        <textarea name="about" id="about" cols="50" rows="7"></textarea>
+                    </p>
+                    <button class="banner__button banner__button--last">Отправить</button>
                 </form>
             </div>
         </section>
